@@ -21,9 +21,9 @@ def predict():
     predict_request=[[data['cement'],data['slag'],data['ash'],data['water'],data['superplastic'],data['age']]]
     predict_request=np.array(predict_request)
     predict_request_df=pd.DataFrame(predict_request)
-    print(predict_request_df)
+    # print(predict_request_df)
     prediction=model.predict(predict_request_df)
-    print(prediction)
+    # print(prediction)
     return jsonify(float(prediction))
 @app.route('/predict',methods=['POST'])
 def webApp():
@@ -32,9 +32,9 @@ def webApp():
     predict_request=[[request.form.get("cement"),request.form.get('slag'),request.form.get('ash'),request.form.get('water'),request.form.get('superplastic'),request.form.get('age')]]
     predict_request = np.array(predict_request)
     predict_request_df = pd.DataFrame(predict_request)
-    print(predict_request_df)
+    # print(predict_request_df)
     prediction = model.predict(predict_request_df)
-    print(prediction)
+    # print(prediction)
     return render_template('home.html',prediction='Strength of concrete is {}'.format(prediction))
 
 
