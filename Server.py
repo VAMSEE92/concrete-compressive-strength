@@ -4,7 +4,7 @@ import numpy as np
 import warnings
 import pickle
 import os
-os.chdir('E:\imp\Tasks\Concrete')
+# os.chdir('E:\imp\Tasks\Concrete')
 # Load Model
 model=pickle.load(open('Finalmodel.pkl','rb'))
 app=Flask(__name__)
