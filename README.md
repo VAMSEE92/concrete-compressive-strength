@@ -2,7 +2,8 @@
 ### Demo
 Link
 [http://ec2-52-66-46-245.ap-south-1.compute.amazonaws.com](http://ec2-52-66-46-245.ap-south-1.compute.amazonaws.com:8080/)
-![Web app demo Image](https://image-33.jpg) 
+#####
+![Web app demo Image](https://github.com/VAMSEE92/concrete-compressive-strength/blob/main/images/demo.JPG) 
 ### Problem Statement
 The actual concrete compressive strength (MPa) for a given mixture under a
 specific age (days) was determined from laboratory. Data is in raw form (not
@@ -28,7 +29,7 @@ If you are using a lower version of Python you can upgrade using the pip package
 ### Deployment on AWS EC2
 #### Step 1:
 Launch an ec2 instance on aws. You can find instructions to launch ec2 instance [here](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html)
-![ec2_instance_selection](https://image-33.jpg)
+![ec2_instance_selection](https://github.com/VAMSEE92/concrete-compressive-strength/blob/main/images/ec2_instance.JPG)
 #### Step 2:
 Connect to your instance using putty. You can find instructions on how to connect to ec2 instance using putty [here](https://asf.alaska.edu/how-to/data-recipes/connect-to-your-ec2-instance-using-putty-v1-1/)
 #### Step 3:
@@ -41,15 +42,15 @@ Go to your ec2 terminal and run the following commands
     pip3 install -r requirements.txt
 #### Step 5:
 Got to security group in Network & Security and create a new security group with inbound rule as All traffic for this sinario. Add the recently created security group to your instance
-![Creating security Group](https://image-33.jpg)
-![Adding security Group](https://image-33.jpg) 
+![Creating security Group](https://github.com/VAMSEE92/concrete-compressive-strength/blob/main/images/create_security_grp.JPG)
+![Adding security Group](https://github.com/VAMSEE92/concrete-compressive-strength/blob/main/images/Adding_security_grp.JPG) 
 #### Step 6:
 Go to your ec2 terminal and run the following command.
 
     python3 Server.py
 
 In connect to instance window under SSH client tab you can find a public dns on which your web app is running
-![Public DNS](https://image-33.jpg)
+![Public DNS](https://github.com/VAMSEE92/concrete-compressive-strength/blob/main/images/instance_public_ip.JPG)
 ### Directory Tree
     |__ app
     |    |__static
@@ -64,6 +65,6 @@ In connect to instance window under SSH client tab you can find a public dns on 
     |__requirements.txt
 
 ### Technologies and Tools Used
-![!technologies](https://image-33.jpg)
+![!technologies](https://github.com/VAMSEE92/concrete-compressive-strength/blob/main/images/tootls_technologies.png)
 ### References
 [UCI ML repository on concrete comprehensive strength](https://archive.ics.uci.edu/ml/datasets/concrete+compressive+strength) 
