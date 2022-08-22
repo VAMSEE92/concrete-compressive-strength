@@ -1,9 +1,9 @@
 # Concrete Compressive strength
 ### Demo
 Link
-[https://concretecomprehensivestrength.herokuapp.com/predict)
+(https://concretecomprehensivestrength.herokuapp.com/predict)
 #####
-![Web app demo Image](https://github.com/VAMSEE92/concrete-compressive-strength/blob/main/images/demo.JPG) 
+![Web app demo Image](https://github.com/VAMSEE92/concrete-compressive-strength/blob/main/images/DeployedResult.JPG) 
 ### Problem Statement
 The actual concrete compressive strength (MPa) for a given mixture under a
 specific age (days) was determined from laboratory. Data is in raw form (not
