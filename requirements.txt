@@ -1,7 +1,11 @@
 numpy
 pandas==1.2.4
+itsdangerous==1.1.0
+MarkupSafe==1.1.1
+Jinja2==2.11.3
 flask==2.1.2
 scipy==1.6.0
 scikit-learn
 requests
 gunicorn==20.1.0
+Werkzeug
