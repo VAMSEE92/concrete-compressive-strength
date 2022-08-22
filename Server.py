@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request,render_template
 import pandas as pd
-import numpy as np
+# import numpy as np
 import warnings
 import pickle
 import os
@@ -19,7 +19,7 @@ def predict():
     data=request.get_json(force=True)
     # Make prediction using model loaded from disk as per the data
     predict_request=[[data['cement'],data['slag'],data['ash'],data['water'],data['superplastic'],data['age']]]
-    predict_request=np.array(predict_request)
+#     predict_request=np.array(predict_request)
     predict_request_df=pd.DataFrame(predict_request)
     # print(predict_request_df)
     prediction=model.predict(predict_request_df)
@@ -30,7 +30,7 @@ def webApp():
     warnings.filterwarnings('ignore')
     # get data from post request
     predict_request=[[request.form.get("cement"),request.form.get('slag'),request.form.get('ash'),request.form.get('water'),request.form.get('superplastic'),request.form.get('coarseagg'),request.form.get('fineagg'),request.form.get('age')]]
-    predict_request = np.array(predict_request)
+#     predict_request = np.array(predict_request)
     predict_request_df = pd.DataFrame(predict_request)
     # print(predict_request_df)
     prediction = model.predict(predict_request_df)
