@@ -29,7 +29,7 @@ def predict():
 def webApp():
     warnings.filterwarnings('ignore')
     # get data from post request
-    predict_request=[[request.form.get("cement"),request.form.get('slag'),request.form.get('ash'),request.form.get('water'),request.form.get('superplastic'),request.form.get('age')]]
+    predict_request=[[request.form.get("cement"),request.form.get('slag'),request.form.get('ash'),request.form.get('water'),request.form.get('superplastic'),request.form.get('coarseagg'),request.form.get('fineagg'),request.form.get('age')]]
     predict_request = np.array(predict_request)
     predict_request_df = pd.DataFrame(predict_request)
     # print(predict_request_df)
@@ -40,5 +40,5 @@ def webApp():
 
 
 if __name__=='__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(debug=True)
 
