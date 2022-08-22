@@ -1,7 +1,7 @@
 # Concrete Compressive strength
 ### Demo
-Link
-(https://concretecomprehensivestrength.herokuapp.com/predict)
+[Link]
+(https://concretecomprehensivestrength.herokuapp.com/)
 #####
 ![Web app demo Image](https://github.com/VAMSEE92/concrete-compressive-strength/blob/main/images/DeployedResult.JPG) 
 ### Problem Statement
